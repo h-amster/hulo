@@ -1,0 +1,143 @@
+.process {
+  &__container {
+    @include pageGrid;
+    padding-block: 120px;
+
+    @media (max-width: 1400px) {
+      padding-block: 60px;
+    }
+
+    @media (max-width: 1400px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    grid-column: 1 / 5;
+    justify-self: start;
+    align-self: start;
+
+    @media (max-width: 1400px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    counter-reset: list;
+    grid-column: 5 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__step {
+    position: relative;
+    padding-left: 174px;
+    padding-bottom: 48px;
+
+    @media (max-width: 900px) {
+      padding-left: 100px;
+    }
+
+    @extend %separator;
+
+    &::before {
+      content: "0" counter(list);
+      counter-increment: list;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 140%;
+      color: $color-accent;
+    }
+  }
+
+  &__step-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__step-heading {
+    @extend %plain-text;
+  }
+
+  &__step-button {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: $color-black;
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: $effectDuration;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: $color-accent;
+      width: 4px;
+      height: 4px;
+      transition: transform $effectDuration;
+    }
+  }
+
+  &__step-button-svg {
+    z-index: 2;
+  }
+
+  &__step-title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: $color-black;
+    margin-bottom: 32px;
+
+    @media (max-width: 900px) {
+      font-size: 34px;
+    }
+  }
+
+  &__step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+
+  &__step-text {
+    @extend %plain-text;
+  }
+
+  &__step--open &__step-button {
+    transform: rotate(-90deg);
+  }
+
+  &__step--open &__step-button::after {
+    transform: scale(22);
+  }
+
+  &__step--open .process__step-content {
+    padding: 32px;
+    max-height: 100%;
+  }
+}

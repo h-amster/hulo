@@ -1,0 +1,96 @@
+.about {
+  &__container {
+    padding-block: 120px 200px;
+    display: grid;
+    column-gap: $grid-gap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title subtitle-1 subtitle-1"
+      "title subtitle-2 subtitle-2"
+      "title text-1 text-2"
+      "title button text-2";
+
+      @media (max-width: 1200px) {
+        padding-block: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "title title"
+          "subtitle-1 subtitle-1"
+          "subtitle-2 subtitle-2"
+          "text-1 text-2"
+          "button text-2";
+      }
+
+      @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "title"
+          "subtitle-1"
+          "subtitle-2"
+          "text-1"
+          "text-2"
+          "button";
+      }
+  }
+
+  &__title {
+    grid-area: title;
+    align-self: baseline;
+    justify-self: start;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: $color-black;
+
+    @media (max-width: 800px) {
+      font-size: 42px;
+      font-style: italic;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 30px;
+      font-style: italic;
+    }
+  }
+
+  &__subtitle--line-1 {
+    grid-area: subtitle-1;
+  }
+
+  &__subtitle--line-2 {
+    grid-area: subtitle-2;
+    text-align: right;
+    margin-bottom: 80px;
+  }
+
+  &__text {
+    @extend %plain-text;
+  }
+
+  &__text--1 {
+    grid-area: text-1;
+
+    @media (max-width: 700px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text--2 {
+    grid-area: text-2;
+
+    @media (max-width: 700px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    align-self: end;
+  }
+}

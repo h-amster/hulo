@@ -1,13 +1,659 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
+    <meta name="description" content="Hulo test task">
+    <link rel="stylesheet" href="scss/style.scss">
+    <title>Hulo dev</title>
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#">
+          PIPI&#8209;POOPOO
+        </a>
+    
+        <div class="header__menu">
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li>
+                <a class="nav__link" href="#about">About&nbsp;us</a>
+              </li>
+    
+              <li>
+                <a class="nav__link" href="#services">Services</a>
+              </li>
+    
+              <li>
+                <a class="nav__link" href="#works">Our&nbsp;work</a>
+              </li>
+    
+              <li>
+                <a class="nav__link" href="#testimonials">Blog</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <div class="header__buttons">
+            <a class="header__inst" href="https://www.instagram.com/" target="_blank" aria-label="Instagram Link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99999 5.19249C7.33983 5.19249 5.19296 7.33937 5.19296 9.99953C5.19296 12.6597 7.33983 14.8066 9.99999 14.8066C12.6601 14.8066 14.807 12.6597 14.807 9.99953C14.807 7.33937 12.6601 5.19249 9.99999 5.19249ZM9.99999 13.1237C8.27968 13.1237 6.87577 11.7198 6.87577 9.99953C6.87577 8.27921 8.27968 6.87531 9.99999 6.87531C11.7203 6.87531 13.1242 8.27921 13.1242 9.99953C13.1242 11.7198 11.7203 13.1237 9.99999 13.1237ZM15.0039 3.87531C14.3828 3.87531 13.8812 4.37687 13.8812 4.99796C13.8812 5.61906 14.3828 6.12062 15.0039 6.12062C15.625 6.12062 16.1266 5.6214 16.1266 4.99796C16.1267 4.85048 16.0978 4.70441 16.0415 4.56812C15.9851 4.43183 15.9024 4.308 15.7981 4.20371C15.6939 4.09943 15.57 4.01674 15.4337 3.96039C15.2974 3.90403 15.1514 3.87512 15.0039 3.87531ZM19.3703 9.99953C19.3703 8.70578 19.382 7.42374 19.3094 6.13234C19.2367 4.63234 18.8945 3.30109 17.7976 2.20421C16.6984 1.10499 15.3695 0.76515 13.8695 0.692494C12.5758 0.619838 11.2937 0.631557 10.0023 0.631557C8.70858 0.631557 7.42655 0.619838 6.13515 0.692494C4.63515 0.76515 3.3039 1.10734 2.20702 2.20421C1.1078 3.30343 0.767958 4.63234 0.695302 6.13234C0.622645 7.42609 0.634364 8.70812 0.634364 9.99953C0.634364 11.2909 0.622645 12.5753 0.695302 13.8667C0.767958 15.3667 1.11015 16.698 2.20702 17.7948C3.30624 18.8941 4.63515 19.2339 6.13515 19.3066C7.4289 19.3792 8.71093 19.3675 10.0023 19.3675C11.2961 19.3675 12.5781 19.3792 13.8695 19.3066C15.3695 19.2339 16.7008 18.8917 17.7976 17.7948C18.8969 16.6956 19.2367 15.3667 19.3094 13.8667C19.3844 12.5753 19.3703 11.2933 19.3703 9.99953ZM17.3078 15.5261C17.1367 15.9527 16.9305 16.2714 16.6 16.5995C16.2695 16.93 15.9531 17.1362 15.5266 17.3073C14.2937 17.7972 11.3664 17.687 9.99999 17.687C8.63358 17.687 5.7039 17.7972 4.47108 17.3097C4.04452 17.1386 3.72577 16.9323 3.39765 16.6019C3.06718 16.2714 2.86093 15.955 2.68983 15.5284C2.20233 14.2933 2.31249 11.3659 2.31249 9.99953C2.31249 8.63312 2.20233 5.70343 2.68983 4.47062C2.86093 4.04406 3.06718 3.72531 3.39765 3.39718C3.72811 3.06906 4.04452 2.86046 4.47108 2.68937C5.7039 2.20187 8.63358 2.31203 9.99999 2.31203C11.3664 2.31203 14.2961 2.20187 15.5289 2.68937C15.9555 2.86046 16.2742 3.06671 16.6023 3.39718C16.9328 3.72765 17.1391 4.04406 17.3101 4.47062C17.7976 5.70343 17.6875 8.63312 17.6875 9.99953C17.6875 11.3659 17.7976 14.2933 17.3078 15.5261Z" fill="#1D201F" />
+              </svg>
+            </a>
+    
+            <a class="button" href="#contacts">
+              <span class="button__text">LET'S CHAT</span>
+    
+              <span class="button__icon-wrapper">
+                <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Check marketing off your list.</h1>
+
+        <div class="container hero__container">
+          <p class="hero__text">a full-service design & marketing agency.</p>
+
+          <a class="button hero__button" href="#contacts">
+            <span class="button__text">talk to an expert</span>
+
+            <span class="button__icon-wrapper">
+              <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+              </svg>
+            </span>
+          </a>
+
+          <span class="hero__title-phrase hero__title-phrase--1">Check</span>
+          <span class="hero__title-phrase hero__title-phrase--2">marketing</span>
+          <span class="hero__title-phrase hero__title-phrase--3 ">off&nbsp;your&nbsp;list.</span>
+
+          <p class="hero__subtitle">
+            Grow your business without adding more to your plate.
+            <br>
+            <span class="hero__subtitle--italic">You deserve support.</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="container project__container">
+          <a class="project__link" href="#">
+            <div class="project__img-wrapper">
+              <img class="project__img" src="./img/project.jpg" alt="project image">
+            </div>
+          </a>
+        
+          <ul class="project__description">
+            <li class="project__description-item text-with-icon">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z" fill="#1D201F" />
+              </svg>
+        
+              Featured Project
+            </li>
+        
+            <li class="project__description-item project__description-item--middle">
+              Kate Eckstein Design
+            </li>
+        
+            <li class="project__description-item project__description-item--last">
+              Strategy, content, Design, development
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="heading">
+        <div class="container heading__container">
+          <h2 class="heading__title">
+            YOU&nbsp;HAVE <span class="heading__accent">a&nbsp;lot</span> GOING&nbsp;ON.
+          </h2>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="about__title text-with-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+              <rect width="12" height="12" fill="#1d201f"/>
+            </svg>
+
+            <h2>About us</h2>
+          </div>
+
+          <p class="about__subtitle about__subtitle--line-1">Running a business means</p>
+          <p class="about__subtitle about__subtitle--line-2">wearing a lot of hats.</p>
+
+          <p class="about__text about__text--1">
+            Do you have a million ideas for growth, but don’t have the bandwidth to turn them into a reality?
+          </p>
+
+          <p class="about__text about__text--2">
+            That’s where we come in. We want to create a strategic communication plan and save you time by executing it for you. You need to do what you do best: focus on the parts of your entrepreneurial journey that inspire you. Leave the rest to us.
+          </p>
+
+          <a class="button button--big about__button" href="#contacts">
+            <span class="button__text">CONTACT US</span>
+
+            <span class="button__icon-wrapper">
+              <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="work__container">
+          <div class="work__content">
+            <h2 class="work__title text-with-icon text-with-icon--vertical">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+                <circle cx="6" cy="6" r="6" fill="#1d201f"/>
+              </svg>
+  
+              HOW WE WORK
+            </h2>
+  
+            <p class="work__text">
+              YOUR BUSINESS NEEDS
+              <br>
+              <span class="work__text-italic">a strategic</span> PLAN,
+              <span class="work__text-accent">creative</span> EXECUTION, &
+              <span class="work__text-italic">steady</span> SUPPORT TO GROW.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards" id="services">
+          <a class="card" href="#contacts">
+            <article class="card__wrapper">
+              <header class="card__header">
+                <p class="card__suptitle">Our 1-day design services</p>
+
+                <h2 class="card__title">I need a visual
+                  <br>
+                  revamp
+                  <br>  
+                  asap
+                </h2>
+              </header>
+
+              <div class="card__img-wrapper card__img-wrapper--1">
+                <img class="card__img" src="./img/card-1.jpg" alt="Card">
+              </div>
+
+              <p class="button button--big card__button" href="#">
+                <span class="button__text">TELL ME MORE</span>
+    
+                <span class="button__icon-wrapper">
+                  <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                  </svg>
+                </span>
+              </p>
+            </article>
+          </a>
+
+          <a class="card" href="#contacts">
+            <article class="card__wrapper">
+              <header class="card__header">
+                <p class="card__suptitle">Our retainer services</p>
+
+                <h2 class="card__title">
+                  I need an
+                  <br>
+                  external
+                  <br>
+                  marketing team
+                </h2>
+              </header>
+
+              <div class="card__img-wrapper card__img-wrapper--2">
+                <img class="card__img" src="./img/card-2.jpg" alt="Card">
+              </div>
+
+              <p class="button button--big card__button" href="#">
+                <span class="button__text">TELL ME MORE</span>
+    
+                <span class="button__icon-wrapper">
+                  <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                  </svg>
+                </span>
+              </p>
+            </article>
+          </a>
+
+          <a class="card" href="#contacts">
+            <article class="card__wrapper">
+              <header class="card__header">
+                <p class="card__suptitle">Let’s work together</p>
+
+                <h2 class="card__title">
+                  I Need to
+                  <br>
+                  increase online
+                  <br>
+                  presence
+                </h2>
+              </header>
+
+              <div class="card__img-wrapper card__img-wrapper--3">
+                <img class="card__img" src="./img/card-3.jpg" alt="Card">
+              </div>
+
+              <p class="button button--big card__button" href="#">
+                <span class="button__text">TELL ME MORE</span>
+    
+                <span class="button__icon-wrapper">
+                  <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                  </svg>
+                </span>
+              </p>
+            </article>
+          </a>
+      </section>
+
+      <section class="process">
+        <div class="container process__container">
+          <h2 class="process__title text-with-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 0L7.37766 2.67403L10.2426 1.75736L9.32597 4.62234L12 6L9.32597 7.37766L10.2426 10.2426L7.37766 9.32597L6 12L4.62234 9.32597L1.75736 10.2426L2.67403 7.37766L0 6L2.67403 4.62234L1.75736 1.75736L4.62234 2.67403L6 0Z" fill="#1D201F"/>
+            </svg>
+              
+
+            OUR PROCESS
+          </h2>
+
+          <ol class="process__list">
+            <li class="process__step">
+              <div class="process__step-header">
+                <h3 class="process__step-heading">
+                  strategic PLANNING
+                </h3>
+    
+                <button class="process__step-button" aria-label="Open step">
+                  <svg class="process__step-button-svg" width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" transform="rotate(90 2 2)" fill="white" />
+                    <circle cx="2" cy="10" r="2" transform="rotate(90 2 10)" fill="white" />
+                    <circle cx="2" cy="18" r="2" transform="rotate(90 2 18)" fill="white" />
+                  </svg>
+                </button>
+              </div>
+  
+              <div class="process__step-title">Feeling overwhelmed, unsure where to begin, or indecisive about the next steps for your business? </div>
+              <div class="process__step-content">
+                <p class="process__step-text">
+                  Deep breaths. Feeling overwhelmed, unsure where to begin, or indecisive about the next steps for your business? Deep breaths. We’ve got you covered. Our process kicks off with research and concept development. We want to take a learning deep-dive when it comes to your company's history, goals, and dreams for the future. Then, our team will design a branding concept to take your business to the next level–and then craft a mastermind plan to roll it out. 
+                </p>
+  
+                <a class="button button--big card__button" href="#">
+                  <span class="button__text">TELL ME MORE</span>
+      
+                  <span class="button__icon-wrapper">
+                    <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </li>
+
+            <li class="process__step">
+              <div class="process__step-header">
+                <h3 class="process__step-heading">
+                  creative EXECUTION
+                </h3>
+    
+                <button class="process__step-button" aria-label="Open step">
+                  <svg class="process__step-button-svg" width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" transform="rotate(90 2 2)" fill="white" />
+                    <circle cx="2" cy="10" r="2" transform="rotate(90 2 10)" fill="white" />
+                    <circle cx="2" cy="18" r="2" transform="rotate(90 2 18)" fill="white" />
+                  </svg>
+                </button>
+              </div>
+  
+              <div class="process__step-title">We believe in the marketing trifecta: visuals, copy, and technology. </div>
+              <div class="process__step-content">
+                <p class="process__step-text">
+                  Deep breaths. Feeling overwhelmed, unsure where to begin, or indecisive about the next steps for your business? Deep breaths. We’ve got you covered. Our process kicks off with research and concept development. We want to take a learning deep-dive when it comes to your company's history, goals, and dreams for the future. Then, our team will design a branding concept to take your business to the next level–and then craft a mastermind plan to roll it out. 
+                </p>
+  
+                <button class="button button--big card__button">
+                  <span class="button__text">TELL ME MORE</span>
+      
+                  <span class="button__icon-wrapper">
+                    <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </li>
+
+            <li class="process__step">
+              <div class="process__step-header">
+                <h3 class="process__step-heading">
+                  strategic PLANNING
+                </h3>
+    
+                <button class="process__step-button" aria-label="Open step">
+                  <svg class="process__step-button-svg" width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" transform="rotate(90 2 2)" fill="white" />
+                    <circle cx="2" cy="10" r="2" transform="rotate(90 2 10)" fill="white" />
+                    <circle cx="2" cy="18" r="2" transform="rotate(90 2 18)" fill="white" />
+                  </svg>
+                </button>
+              </div>
+  
+              <div class="process__step-title">In this day and age, having a strong online presence is like getting a good night’s sleep–it’s just that important. </div>
+              <div class="process__step-content">
+                <p class="process__step-text">
+                  And whenever a business grows, its website and social media need to be updated. We know more than anyone that managing your online spaces can be onerous and overwhelming. Our team is here to support you throughout any and every stage of your business development. While other companies can be fragmented and slow-moving in their outsourcing offerings, you can trust us to do better. Our support is guaranteed to be personable, consistent, and efficient. 
+                </p>
+  
+                <a class="button button--big card__button" href="#">
+                  <span class="button__text">TELL ME MORE</span>
+      
+                  <span class="button__icon-wrapper">
+                    <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="container works__container">
+          <header class="works__header">
+            <h2 class="works__title text-with-icon">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z" fill="#1D201F" />
+              </svg>
+
+              SELECTED WORK
+            </h2>
+
+            <p class="works__subtitle">
+              Sit nam egestas nullam nulla. Sed nisi arcu et blandit.
+            </p>
+          </header>
+
+          <article class="works__card works__card--1">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-1.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">Strategy</h3>
+            <p class="works__card-description">AER Media</p>
+          </article>
+
+          <article class="works__card works__card--2">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-2.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">DEsign</h3>
+            <p class="works__card-description">Valerie Wheeler</p>
+          </article>
+
+          <article class="works__card works__card--3">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-3.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">Strategy</h3>
+            <p class="works__card-description">Luneer MGMT</p>
+          </article>
+
+          <article class="works__card works__card--4">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-4.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">content</h3>
+            <p class="works__card-description">Social Blue Print</p>
+          </article>
+
+          <article class="works__card works__card--5">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-5.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">Strategy</h3>
+            <p class="works__card-description">Luneer MGMT</p>
+          </article>
+
+          <article class="works__card works__card--6">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-6.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">Strategy</h3>
+            <p class="works__card-description">Luneer MGMT</p>
+          </article>
+
+          <article class="works__card works__card--7">
+            <div class="works__img-wrapper">
+              <img class="works__card-img" src="./img/work-7.jpg" alt="Work Card">
+            </div>
+
+            <h3 class="works__card-title">Strategy</h3>
+            <p class="works__card-description">Luneer MGMT</p>
+          </article>
+
+          <div class="works__more">
+            <p class="works__more-text">
+              Facilisis gravida pharetra, risus vel in. Mauris in lacus condimentum feugiat.
+            </p>
+
+            <a class="button button--big" href="#contacts">
+              <span class="button__text">view More work</span>
+  
+              <span class="button__icon-wrapper">
+                <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container testimonials__container">
+          <h2 class="text-with-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1V12L5 8V1H0Z" fill="#1D201F" />
+              <path d="M7 1V12L12 8V1H7Z" fill="#1D201F" />
+            </svg>
+
+            Testimonials
+          </h2>
+
+          <div class="swiper slider-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="testimonials__comment">
+                  <p class="testimonials__comment-text">
+                    Porttitor mattis congue gravida consectetur duis euismod imperdiet. Nunc eu amet, adipiscing amet tincidunt mi lectus ut. Habitant nullam ut auctor.
+                  </p>
+      
+                  <div class="testimonials__author-info">
+                    <img src="./img/comments/luna.jpg" class="testimonials__comment-img" alt="Comment author">
+                    <h3 class="testimonials__comment-author">– Luna, Luna’s Asethetics</h3>
+                  </div>
+              </article>
+            </div>
+              <div class="swiper-slide">
+                <article class="testimonials__comment">
+                  <p class="testimonials__comment-text">
+                    At semper elementum sapien amet. Orci imperdiet habitant purus sit aliquet in. Tortor mauris morbi eget lobortis cras malesuada. Non fringilla vulputate sed 
+                  </p>
+      
+                  <div class="testimonials__author-info">
+                    <img src="./img/comments/roman.jpg" class="testimonials__comment-img" alt="Comment author">
+                    <h3 class="testimonials__comment-author">– Pan Roman, Chloé Asethetics</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonials__comment">
+                  <p class="testimonials__comment-text">
+                    Porttitor mattis congue gravida consectetur duis euismod imperdiet. Nunc eu amet, adipiscing amet tincidunt mi lectus ut. Habitant nullam ut auctor.
+                  </p>
+      
+                  <div class="testimonials__author-info">
+                    <img src="./img/comments/luna.jpg" class="testimonials__comment-img" alt="Comment author">
+                    <h3 class="testimonials__comment-author">– Luna, Luna’s Asethetics</h3>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="testimonials__comment">
+                  <p class="testimonials__comment-text">
+                    At semper elementum sapien amet. Orci imperdiet habitant purus sit aliquet in. Tortor mauris morbi eget lobortis cras malesuada. Non fringilla vulputate sed 
+                  </p>
+      
+                  <div class="testimonials__author-info">
+                    <img src="./img/comments/roman.jpg" class="testimonials__comment-img" alt="Comment author">
+                    <h3 class="testimonials__comment-author">– Pan Roman, Chloé Asethetics</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="audit">
+        <div class="container audit__container">
+          <div class="audit__content">
+            <h2 class="audit__title text-with-icon">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0L8.11603 3.08754L11.7063 4.1459L9.4238 7.11246L9.52671 10.8541L6 9.6L2.47329 10.8541L2.5762 7.11246L0.293661 4.1459L3.88397 3.08754L6 0Z" fill="#1D201F"/>
+              </svg>
+
+              Get in Touch
+            </h2>
+
+            <p class="audit__subtitle">SCHEDULE <span class="audit__accent">a&nbsp;free</span> BRAND AUDIT</p>
+
+            <p class="audit__text">
+              Get expert eyes on your brand + website. One of our creative strategies will take a look at your brand and give you your best next steps to improve your online presence to increase conversions. From there, we will offer you the next steps on how to engage our team, or you can take our free advice and grow your business yourself.
+            </p>
+
+            <form class="audit__email">
+              <input type="email" placeholder="Email" class="audit__input">
+
+              <button type="submit" class="button button--big audit__button">
+                <span class="button__text">SUBMIT</span>
+    
+                <span class="button__icon-wrapper">
+                  <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </div>
+
+          <img class="audit__img" src="./img/aduit.jpg" alt="Audit">
+        </div>
+      </section>
+
+      <div class="contacts" id="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__heading">
+            <h2 class="contacts__title text-with-icon">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.99996 0C6.90604 0.000523657 7.80023 0.206253 8.61544 0.601749C9.43064 0.997246 10.1457 1.57224 10.7069 2.28358C11.2681 2.99491 11.661 3.82412 11.8559 4.70898C12.0509 5.59383 12.0429 6.51135 11.8326 7.39268C11.6223 8.27401 11.2151 9.09626 10.6416 9.79773C10.068 10.4992 9.3431 11.0617 8.52113 11.4429C7.69917 11.8242 6.80154 12.0143 5.89559 11.9991C4.98964 11.9838 4.09891 11.7636 3.29023 11.3549L3.19948 11.3062L0.465747 11.9887C0.413136 12.0019 0.358281 12.0036 0.304967 11.9935C0.251653 11.9835 0.20115 11.962 0.156943 11.9306C0.112736 11.8991 0.0758777 11.8585 0.0489116 11.8114C0.0219455 11.7643 0.00551355 11.712 0.000749941 11.6579V11.5964L0.01125 11.5342L0.693746 8.8012L0.646496 8.7112C0.303286 8.03557 0.0920169 7.30071 0.0239999 6.54596L0.00524995 6.25946L0 5.99996C0 4.40867 0.632137 2.88256 1.75735 1.75735C2.88256 0.632137 4.40867 0 5.99996 0ZM6.37496 6.74996H4.12498L4.05748 6.75596C3.97101 6.77162 3.8928 6.81713 3.83647 6.88457C3.78015 6.95201 3.74929 7.03709 3.74929 7.12496C3.74929 7.21282 3.78015 7.2979 3.83647 7.36534C3.8928 7.43278 3.97101 7.4783 4.05748 7.49396L4.12498 7.49996H6.37496L6.44246 7.49396C6.52892 7.4783 6.60714 7.43278 6.66347 7.36534C6.71979 7.2979 6.75065 7.21282 6.75065 7.12496C6.75065 7.03709 6.71979 6.95201 6.66347 6.88457C6.60714 6.81713 6.52892 6.77162 6.44246 6.75596L6.37496 6.74996ZM7.87495 4.49997H4.12498L4.05748 4.50597C3.97101 4.52163 3.8928 4.56715 3.83647 4.63459C3.78015 4.70203 3.74929 4.7871 3.74929 4.87497C3.74929 4.96284 3.78015 5.04791 3.83647 5.11536C3.8928 5.18279 3.97101 5.22831 4.05748 5.24397L4.12498 5.24997H7.87495L7.94245 5.24397C8.02891 5.22831 8.10713 5.18279 8.16346 5.11536C8.21978 5.04791 8.25064 4.96284 8.25064 4.87497C8.25064 4.7871 8.21978 4.70203 8.16346 4.63459C8.10713 4.56715 8.02891 4.52163 7.94245 4.50597L7.87495 4.49997Z" fill="#1D201F" />
+                <path d="M7.87495 4.49997H4.12498L4.05748 4.50597C3.97101 4.52163 3.8928 4.56715 3.83647 4.63459C3.78015 4.70203 3.74929 4.7871 3.74929 4.87497C3.74929 4.96284 3.78015 5.04791 3.83647 5.11536C3.8928 5.18279 3.97101 5.22831 4.05748 5.24397L4.12498 5.24997H7.87495L7.94245 5.24397C8.02891 5.22831 8.10713 5.18279 8.16346 5.11536C8.21978 5.04791 8.25064 4.96284 8.25064 4.87497C8.25064 4.7871 8.21978 4.70203 8.16346 4.63459C8.10713 4.56715 8.02891 4.52163 7.94245 4.50597L7.87495 4.49997Z" fill="#1D201F" />
+                <path d="M6.37496 6.74996H4.12498L4.05748 6.75596C3.97101 6.77162 3.8928 6.81713 3.83647 6.88457C3.78015 6.95201 3.74929 7.03709 3.74929 7.12496C3.74929 7.21282 3.78015 7.2979 3.83647 7.36534C3.8928 7.43278 3.97101 7.4783 4.05748 7.49396L4.12498 7.49996H6.37496L6.44246 7.49396C6.52892 7.4783 6.60714 7.43278 6.66347 7.36534C6.71979 7.2979 6.75065 7.21282 6.75065 7.12496C6.75065 7.03709 6.71979 6.95201 6.66347 6.88457C6.60714 6.81713 6.52892 6.77162 6.44246 6.75596L6.37496 6.74996Z" fill="#1D201F" />
+              </svg>
+
+              Contact Us
+            </h2>
+
+            <p class="contacts__subtitle">
+              LET’S WORK
+              <br>
+              <span class="contacts__accent">together</span>
+            </p>
+
+            <a type="submit" class="button button--big" href="#">
+              <span class="button__text">Contact us</span>
+  
+              <span class="button__icon-wrapper">
+                <svg class="button__icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0V1H8.295L0 9.295L0.705 10L9 1.705V8H10V0H2Z" fill="#1d201f" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <dl class="contacts__data">
+            <div class="contacts__data-group">
+              <dt class="contacts__term">Phone</dt>
+              <dd class="contacts__definition"><a class="contacts__link" href="tel:123 456 7890">123 456 7890</a></dd>
+            </div>
+
+            <div class="contacts__data-group">
+              <dt class="contacts__term">Email</dt>
+              <dd class="contacts__definition"><a class="contacts__link" href="mailto:HELLO@PIPI-POOPOO.COM">HELLO@PIPI-POOPOO.COM</a></dd>
+            </div>
+
+            <div class="contacts__data-group">
+              <dt class="contacts__term">OFFICE HOURS:</dt>
+              <dd class="contacts__definition">MONDAY - FRIDAY: 9AM - 5PM EST</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copy">PIPI-POOPOO® ©2022</p>
+
+        <div class="footer__nav">
+          <a class="footer__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <a class="footer__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+
+        <button class="footer__back-top">
+          <span class="footer__back-top-text">
+            Back to top
+          </span>
+
+          <div class="footer__back-top-svg-wrapper">
+            <svg class="footer__back-top-svg" width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.314116 6.55637L1.02122 7.26347L5.47246 2.81224V14.5431H6.46948V2.81224L10.9207 7.26347L11.6278 6.55637L5.97097 0.899513L0.314116 6.55637Z" fill="#1D201F" />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </footer>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>

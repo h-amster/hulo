@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

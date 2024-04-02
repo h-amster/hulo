@@ -1,0 +1,65 @@
+.footer {
+
+  &__container {
+    padding-block: 80px 160px;
+    @include pageGrid;
+    justify-items: start;
+
+    @media (max-width: 1230px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+
+  &__copy {
+    @extend %plain-text;
+    grid-column: 1 / 8;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    grid-column: 8 / 11;
+  }
+
+  &__link {
+    @extend %plain-text;
+    @extend %underline;
+    text-decoration: none;
+  }
+
+  &__back-top {
+    padding: 0;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    grid-column: 11 / -1;
+  }
+
+  &__back-top-text {
+    @extend %plain-text;
+  }
+
+  &__back-top-svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: $color-accent;
+    border-radius: 50%;
+  }
+}

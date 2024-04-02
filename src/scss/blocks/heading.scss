@@ -1,0 +1,53 @@
+.heading {
+  &__container {
+    padding-block: 56px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 133px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: $color-black;
+
+    @media (max-width: 800px) {
+      font-size: 72px;
+    }
+
+    @extend %separator;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1800px) {
+      flex-direction: column;
+    }
+  }
+
+  &__accent {
+    font-style: italic;
+    display: block;
+    position: relative;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -15px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 200px;
+      background-image: url("../img/accents/accent-heading.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1.2);
+
+      @media (max-width: 800px) {
+        top: -55px;
+      }
+    }
+  }
+}

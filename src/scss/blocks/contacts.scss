@@ -1,0 +1,98 @@
+.contacts {
+  &__container {
+    padding-block: 80px;
+    @extend %separator;
+    @include pageGrid;
+
+    @media (max-width: 1250px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    grid-column: 1 / 8;
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: $color-black;
+
+    @media (max-width: 600px) {
+      font-size: 76px;
+    }
+  }
+
+  &__accent {
+    font-style: italic;
+    position: relative;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -25px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 200px;
+      background-image: url("../img/accents/accent-contacts.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      @media (max-width: 600px) {
+        top: -35px;
+      }
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    grid-column: 8 / -1;
+  }
+
+  &__data-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__term {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__definition {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: $color-black;
+
+    @media (max-width: 600px) {
+      font-size: 26px;
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    text-decoration: none;
+  }
+}
